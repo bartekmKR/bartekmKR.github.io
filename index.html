@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Formularz - zadanie domowe Akademia 108</title>
 </head>
+
 <body>
-	<form 
-		action="https://formspree.io/bartosz.maciolek@com2.pl" method="post">
-		
-		<label for="name">Imię</label><br>
-		<input type="text" id="name"><br><br>
-		
-		<label for="surname">Nazwisko</label><br>
-		<input type="text" id="surname"><br><br>
-		
-		<label for="email">Email</label><br>
-		<input type="text" id="email"><br><br>
-		
-		<label for="phone">Telefon</label><br>
-		<input type="number" id="phone"><br><br>
-		
+	<form action="https://formspree.io/bartosz.maciolek@com2.pl" method="post">
+
+		<label for="name">Imię:</label><br>
+		<input type="text" name="name" id="name"><br><br>
+
+		<label for="surname">Nazwisko:</label><br>
+		<input type="text" name="surname" id="surname"><br><br>
+
+		<label for="email">Email:</label><br>
+		<input type="text" name="email" id="email"><br><br>
+
+		<label for="phone">Telefon:</label><br>
+		<input type="number" name="phone" id="phone"><br><br>
+
 		<label>Miasto:</label><br>
-			<select name="city" id="Miasto">
-				<option value="krakow">Kraków</option>
-				<option value="warsaw">Warszawa</option>
-				<option value="gdansk">Gdańsk</option>
+		<select name="city" id="Miasto">
+				<option value="krakow" name="city">Kraków</option>
+				<option value="warsaw" name="city">Warszawa</option>
+				<option value="gdansk" name="city">Gdańsk</option>
 		</select><br><br>
-		
+
 		<label>Płeć:</label><br>
-		<input type="radio" name="sex" value="M"> Mężczyzna <br>
-		<input type="radio" name="sex" value="K"> Kobieta <br><br>
-		
+		<input type="radio" name="sex" id="sex"> Mężczyzna <br>
+		<input type="radio" name="sex" id="sex"> Kobieta <br><br>
+
 		<label>Zgoda na przetwarzanie danych osobowych</label><br>
- 		<input type="checkbox" name="yes" value="Tak"> TAK<br><br>
-  				
+		<input type="checkbox" name="yes" id="Agree"> TAK<br><br>
+
 		<label for="msg">Wiadomość:</label><br>
-		<textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+		<textarea name="msg" id="msg" cols="50" rows="6"></textarea><br>
 		<input type="submit" value="Wyślij"><br>
-				
-	
-		
-		
-		
+
+
+
+
+
 	</form>
-	
-	
+
+
 </body>
+
 </html>
